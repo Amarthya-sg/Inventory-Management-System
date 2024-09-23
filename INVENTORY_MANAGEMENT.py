@@ -6,8 +6,8 @@ import os
 import time
 from tabulate import tabulate
 
-pw = "8123"  # Replace with your actual MySQL root password
-db = "Inventory"
+pw = "$$$$"  # Replace with your actual MySQL root password
+db = "Inventory" # Replace with your database name
 
 def create_server_connection(host_name, user_name, user_password):
     connection = None
@@ -422,7 +422,6 @@ def type_animation(text):
     for char in text:
         print(char, end='', flush=True)
         time.sleep(0.1)
-
 
 def clear(n):
     time.sleep(n)
